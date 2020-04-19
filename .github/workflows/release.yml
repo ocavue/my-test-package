@@ -36,9 +36,9 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: Setting dependency cache
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: |
           echo 'cache-hit is not true'
-        if: steps.restore-cache.outputs.cache-hit != 'true'
 
       - name: Install Dependencies
         run: yarn install --frozen-lockfile
