@@ -54,7 +54,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      - name: Send a Slack notification if a publish happens
+      - name: published is true
         if: steps.changesets.outputs.published == 'true'
         # You can do something when a publish happens.
-        run: echo "a publish happens!"
+        run: echo 'published is true'
+
+      - name: published is false
+        if: steps.changesets.outputs.published == 'false'
+        # You can do something when a publish happens.
+        run: echo 'published is false'
+
+      - name: published is not true
+        if: steps.changesets.outputs.published != 'true'
+        # You can do something when a publish happens.
+        run: echo 'published is not true'
