@@ -1,5 +1,11 @@
 # @ocavue/my-test-package
 
+## 2.0.1
+
+### Patch Changes
+
+- 4db33a8: test changeset action outputs
+
 ## 2.0.0
 
 ### Major Changes
