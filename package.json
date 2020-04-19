@@ -1,0 +1,19 @@
+{
+  "name": "@ocavue/my-test-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocavue/my-test-package.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ocavue/my-test-package/issues"
+  },
+  "homepage": "https://github.com/ocavue/my-test-package#readme"
+}
