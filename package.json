@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "release": "changeset publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/ocavue/my-test-package/issues"
   },
-  "homepage": "https://github.com/ocavue/my-test-package"
+  "homepage": "https://github.com/ocavue/my-test-package",
+  "dependencies": {
+    "@changesets/cli": "^2.6.4"
+  }
 }
