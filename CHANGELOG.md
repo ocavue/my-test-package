@@ -1,5 +1,15 @@
 # @ocavue/my-test-package
 
+## 2.1.0
+
+### Minor Changes
+
+- 97b4c13: test
+
+### Patch Changes
+
+- 7644c20: yarn run changeset add
+
 ## 2.0.2
 
 ### Patch Changes
