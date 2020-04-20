@@ -70,3 +70,10 @@ jobs:
         run: echo "published is $changeset_outputs_published"
         env:
           changeset_outputs_published: ${{ steps.changesets.outputs.published }}
+
+      - name: published packages
+        if: steps.changesets.outputs.published == 'true'
+        # You can do something when a publish happens.
+        run: echo "$changeset_outputs_published_packages"
+        env:
+          changeset_outputs_published_packages: ${{ steps.changesets.outputs.publishedPackages }}
