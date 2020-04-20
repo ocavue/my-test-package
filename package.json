@@ -1,6 +1,6 @@
 {
   "name": "@ocavue/my-test-package",
-  "version": "2.2.0",
+  "version": "2.2.2",
   "description": "",
   "main": "index.js",
   "publishConfig": {
@@ -10,10 +10,7 @@
     "release": "changeset publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ocavue/my-test-package.git"
-  },
+  "repository": "git://github.com/ocavue/my-test-package.git",
   "author": "",
   "license": "ISC",
   "bugs": {
