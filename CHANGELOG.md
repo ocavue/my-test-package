@@ -1,5 +1,11 @@
 # @ocavue/my-test-package
 
+## 2.0.2
+
+### Patch Changes
+
+- 3c1dcd2: test
+
 ## 2.0.1
 
 ### Patch Changes
