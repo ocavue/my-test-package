@@ -7,7 +7,7 @@
     "access": "public"
   },
   "scripts": {
-    "release": "changeset publish",
+    "release": "changeset publish --otp=$GITHUB_TOKEN",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": "git://github.com/ocavue/my-test-package.git",
