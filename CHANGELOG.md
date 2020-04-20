@@ -1,5 +1,16 @@
 # @ocavue/my-test-package
 
+## 2.2.0
+
+### Minor Changes
+
+- 9ad95ed: minor
+
+### Patch Changes
+
+- acc60d3: b
+- acc60d3: a
+
 ## 2.1.2
 
 ### Patch Changes
