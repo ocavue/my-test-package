@@ -49,10 +49,11 @@ jobs:
       - name: Create Release Pull Request or Publish to npm
         if: github.ref == 'refs/heads/master'
         id: changesets
-        uses: ocavue/action@feat/outputs
+        uses: ocavue/action@feat/custom_commit_message
         with:
           # this expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: yarn run release
+          commitPrefix: "chore(release)"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
