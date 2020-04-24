@@ -1,5 +1,12 @@
 # @ocavue/my-test-package
 
+## 2.2.6
+
+### Patch Changes
+
+- a704b45: test
+- 9a4c3c3: test
+
 ## 2.2.0
 
 ### Minor Changes
