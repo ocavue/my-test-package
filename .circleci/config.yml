@@ -7,7 +7,7 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - sleep 10s
+      - run: sleep 10s
 workflows:
     build-and-test:
       jobs:
