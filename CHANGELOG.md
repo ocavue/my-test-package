@@ -1,5 +1,11 @@
 # @ocavue/my-test-package
 
+## 2.2.8
+
+### Patch Changes
+
+- 6b87baa: test jq
+
 ## 2.2.7
 
 ### Patch Changes
