@@ -49,7 +49,7 @@ jobs:
       - name: Create Release Pull Request or Publish to npm
         if: github.ref == 'refs/heads/master'
         id: changesets
-        uses: ocavue/action@feat/custom_commit_message
+        uses: changesets/action@master
         with:
           # this expects you to have a script called release which does a build for your packages and calls changeset publish
           publish: yarn run release
@@ -79,5 +79,17 @@ jobs:
         if: steps.changesets.outputs.published == 'true'
         # You can do something when a publish happens.
         run: echo "$changeset_outputs_published_packages"
+        env:
+          changeset_outputs_published_packages: ${{ steps.changesets.outputs.publishedPackages }}
+
+      - name: get published package name
+        if: steps.changesets.outputs.published == 'true'
+        run: |
+          which jq
+          jq --version
+          echo 'THE FIRST PACKAGE NAME IS:'
+          echo $changeset_outputs_published_packages | jq '.[0].name'
+          echo 'THE FIRST PACKAGE VERSION IS:'
+          echo $changeset_outputs_published_packages | jq '.[0].version'
         env:
           changeset_outputs_published_packages: ${{ steps.changesets.outputs.publishedPackages }}
