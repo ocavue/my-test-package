@@ -75,18 +75,14 @@ jobs:
         env:
           changeset_outputs_published: ${{ steps.changesets.outputs.published }}
 
-      - name: published packages
-        if: steps.changesets.outputs.published == 'true'
-        # You can do something when a publish happens.
-        run: echo "$changeset_outputs_published_packages"
-        env:
-          changeset_outputs_published_packages: ${{ steps.changesets.outputs.publishedPackages }}
-
       - name: get published package name
         if: steps.changesets.outputs.published == 'true'
         run: |
           which jq
           jq --version
+          echo '======================================'
+          echo "$changeset_outputs_published_packages"
+          echo '======================================'
           echo 'THE FIRST PACKAGE NAME IS:'
           echo $changeset_outputs_published_packages | jq '.[0].name'
           echo 'THE FIRST PACKAGE VERSION IS:'
