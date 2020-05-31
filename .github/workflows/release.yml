@@ -109,3 +109,14 @@ jobs:
           echo "[${changeset_outputs_published}]"
         env:
           changeset_outputs_published: ${{ needs.Release.outputs.published }}
+
+  Firebase:
+    runs-on: ubuntu-latest
+    needs: [Release]
+    if: github.ref == 'refs/heads/master' && needs.Release.outputs.published == 'true'
+    steps:
+      - name: Deploy to Firebase
+        run: |
+          echo "[${changeset_outputs_published}]"
+        env:
+          changeset_outputs_published: ${{ needs.Release.outputs.published }}
