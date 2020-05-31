@@ -1,5 +1,11 @@
 # @ocavue/my-test-package
 
+## 2.3.2
+
+### Patch Changes
+
+- b975893: test
+
 ## 2.3.1
 
 ### Patch Changes
