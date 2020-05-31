@@ -1,5 +1,11 @@
 # @ocavue/my-test-package
 
+## 2.3.0
+
+### Minor Changes
+
+- 16d251f: test
+
 ## 2.2.8
 
 ### Patch Changes
