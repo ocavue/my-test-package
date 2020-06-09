@@ -1,5 +1,11 @@
 # @ocavue/my-test-package
 
+## 2.3.3
+
+### Patch Changes
+
+- 80fed9c: update changeset
+
 ## 2.3.2
 
 ### Patch Changes
