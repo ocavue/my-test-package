@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/ocavue/my-test-package",
   "dependencies": {
-    "@changesets/cli": "^2.6.4"
+    "@changesets/cli": "^2.8.0"
   }
 }
