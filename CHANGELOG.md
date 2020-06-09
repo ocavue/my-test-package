@@ -1,5 +1,11 @@
 # @ocavue/my-test-package
 
+## 2.3.4
+
+### Patch Changes
+
+- 17ed93d: add log
+
 ## 2.3.3
 
 ### Patch Changes
